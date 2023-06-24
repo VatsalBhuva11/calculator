@@ -1,0 +1,102 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-color: #000000;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    align-items: center;
+}
+
+.main{
+    background-color: #28282B;
+    display: grid;
+    grid-template-rows: 50px 150px 75px 75px 75px 75px 75px;
+    gap: 10px;
+    grid-template-columns: 90px 90px 90px 90px 90px;
+    border: 10px solid rgb(88, 87, 87);
+    border-radius: 2%;
+    width: max-content;
+    padding: 15px;
+}
+
+.main > h3{
+    grid-column: span 5;
+    text-align: center;
+    color:antiquewhite
+}
+
+.result{
+    grid-column: span 5;
+    width: 90%;
+    background-color: rgb(28, 26, 26);
+    margin-bottom: 5%;
+}
+
+.center-buttons{
+    grid-column: span 5;
+    display: flex;
+    justify-content: center;
+}
+
+.result{
+    position: relative;
+}
+
+.result > p{
+    position:absolute;
+    left: 10px;
+    bottom: 10px;
+    color: white
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    text-align: center;
+    border-radius: 10%;
+    margin: 2%;
+    background-color: #3e3e42;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn > *{
+    width: 80%;
+    grid-column: span 1;
+    font-size: 1.5rem;
+    user-select: none;
+    color: white;
+    font-weight: 700;
+}
+
+.backspace, .AC{
+    background-color: rgb(150, 57, 57);
+}
+
+.AC > p{
+    color: black;
+}
+
+.backspace > img{
+    height: 70%
+}
+
+sup{
+    font-size: 1rem;
+}
+
+.equal{
+    grid-row: span 2;
+    background-color: green;
+}
+
